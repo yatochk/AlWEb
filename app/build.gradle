@@ -35,7 +35,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
     implementation 'com.yandex.android:mobmetricalib:3.5.3'
-    implementation 'com.google.firebase:firebase-messaging:17.6.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
