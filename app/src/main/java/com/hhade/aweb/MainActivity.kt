@@ -87,11 +87,12 @@ class MainActivity : AppCompatActivity() {
                 ExitDialog().show(supportFragmentManager, "exit")
             return
         }
+        webFragment.goBack()
 
         doubleBackToExitPressedOnce = true
         Handler().postDelayed(
             { doubleBackToExitPressedOnce = false },
-            1000
+            500
         )
     }
 }
