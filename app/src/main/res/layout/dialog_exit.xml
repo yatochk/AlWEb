@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+
+    <TextView
+            android:text="@string/exit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/titleTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView2"/>
+    <Button
+            android:text="@string/cancel_exit"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_exit"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/cancelColor"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/true_exit"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    <Button
+            android:text="@string/ok_exit"
+            android:textColor="@color/exitColor"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/true_exit"
+            app:layout_constraintTop_toTopOf="@+id/cancel_exit"
+            app:layout_constraintStart_toEndOf="@+id/cancel_exit"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AWeb</string>
+    <string name="url">https://google.com</string>
+    <string name="appmetrica_key"></string>
+
+    //exit dialog
+    <string name="cancel_exit">Cancel</string>
+    <string name="ok_exit">Exit</string>
+    <string name="exit_title">Exit?</string>
+
+    <string name="no_internet">No internet connection</string>
+
+</resources>

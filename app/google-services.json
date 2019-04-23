@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "401857370610",
+    "firebase_url": "https://aweb-71597.firebaseio.com",
+    "project_id": "aweb-71597",
+    "storage_bucket": "aweb-71597.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401857370610:android:e9562fc0f4bc4479",
+        "android_client_info": {
+          "package_name": "com.hhade.aweb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401857370610-79tvo9dd9h8ti0i4db06f49njn7vjigg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hhade.aweb",
+            "certificate_hash": "407ac3319498e7ccccf435533c9e1d0b40d948e5"
+          }
+        },
+        {
+          "client_id": "401857370610-0h4eptoh5fjlsf5j2kvjt8c79lpuefbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGB64Fn0G1-Vhmz71SYbJn203frJ-I89k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401857370610-0h4eptoh5fjlsf5j2kvjt8c79lpuefbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
