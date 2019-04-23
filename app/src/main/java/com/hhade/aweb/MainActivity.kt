@@ -1,7 +1,5 @@
 package com.hhade.aweb
 
-import android.content.IntentFilter
-import android.net.ConnectivityManager
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +12,6 @@ class MainActivity : AppCompatActivity() {
 
     private val webFragment = WebFragment()
     private val offlineFragment = OfflineFragment()
-    private val networkReceiver = ConnectionReceiver()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,39 +26,6 @@ class MainActivity : AppCompatActivity() {
                     .commit()
             }
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        val intentFilter = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
-        networkReceiver.setListener {
-            val handler = Handler()
-            if (it) {
-                thread {
-                    val isConnection = pingInternet()
-                    handler.post {
-                        if (isConnection)
-                            goToWeb()
-                        else
-                            goToOffline()
-                    }
-                }
-            } else {
-                goToOffline()
-            }
-        }
-    }
-
-    private fun goToOffline() {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.main_frame, offlineFragment)
-            .commit()
-    }
-
-    private fun goToWeb() {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.main_frame, webFragment)
-            .commit()
     }
 
     private fun pingInternet(): Boolean {
